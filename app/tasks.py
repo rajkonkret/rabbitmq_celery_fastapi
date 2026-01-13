@@ -37,7 +37,7 @@ def send_email(self, email: str):
             "progress": 30,
         },
     )
-    time.sleep(10)
+    time.sleep(27) # symulacja długiego procesu
 
     # ETAP 3
     self.update_state(
