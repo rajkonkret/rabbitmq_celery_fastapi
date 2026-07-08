@@ -30,3 +30,6 @@ def get_task_status(task_id: str):
             response["result_error"] = str(e)
 
     return response
+
+print("BROKER:", celery_app.conf.broker_url)
+print("BACKEND:", celery_app.conf.result_backend)
